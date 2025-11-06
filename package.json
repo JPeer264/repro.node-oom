@@ -5,14 +5,23 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --inspect --watch server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sentry/node": "^10.22.0",
+    "@sentry/core": "file:.yalc/@sentry/core",
+    "@sentry/node": "file:.yalc/@sentry/node",
+    "@sentry/node-core": "file:.yalc/@sentry/node-core",
     "express": "^4.18.2",
     "loadtest": "^8.2.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@sentry/node-core@10.23.0": "file:.yalc/@sentry/node-core",
+      "@sentry/node@10.23.0": "file:.yalc/@sentry/node",
+      "@sentry/core@10.23.0": "file:.yalc/@sentry/core"
+    }
   }
 }

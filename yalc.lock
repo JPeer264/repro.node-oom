@@ -1,0 +1,18 @@
+{
+  "version": "v1",
+  "packages": {
+    "@sentry/node": {
+      "signature": "232020953cf765010ca0a251d75a5c5b",
+      "file": true,
+      "replaced": "10.22.0"
+    },
+    "@sentry/node-core": {
+      "signature": "d20b9e78acf5b979f27355a77ec36461",
+      "file": true
+    },
+    "@sentry/core": {
+      "signature": "01571469ad226eaedf1db8b4613d7d96",
+      "file": true
+    }
+  }
+}
